@@ -26,12 +26,15 @@ jobs:
         with:
           node-version: "26"
           cache: npm
+          cache-dependency-path: docs/page/package-lock.json
       - name: Setup Pages
         uses: actions/configure-pages@v6
-      - name: Install dependencies
+      - name: Install VitePress
+        working-directory: docs/page
         run: npm ci
       - name: Build with VitePress
-        run: npm run docs:build
+        working-directory: docs/page
+        run: npx vitepress build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
