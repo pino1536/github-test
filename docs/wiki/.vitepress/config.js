@@ -5,6 +5,7 @@ export default {
   lastUpdated: false,
   head: [['link', { rel: 'icon', href: 'assets/logo.svg' }]],
   appearance: 'force-dark',
+  base: '/blog/',
   cleanUrls: true,
   themeConfig: {
     logo: '/assets/logo.svg',
