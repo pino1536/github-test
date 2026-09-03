@@ -3,12 +3,12 @@ export default {
   title: "Rustycore",
   description: "Rustycore Documentation",
   lastUpdated: false,
-  head: [['link', { rel: 'icon', href: 'assets/logo.svg' }]],
+  head: [['link', { rel: 'icon', href: '/logo.svg' }]],
   appearance: 'force-dark',
   base: '/github-test/',
   cleanUrls: true,
   themeConfig: {
-    logo: '/assets/logo.svg',
+    logo: '/logo.svg',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Client', link: '/client/', activeMatch: '/client/' },
@@ -74,7 +74,7 @@ export default {
       { icon: 'discord', link: 'https://discord.gg/mH6ACpGPb2' }
     ],
     editLink: {
-      pattern: 'https://github.com/alseif0x/rustycore/docs/wiki/:path',
+      pattern: 'https://github.com/alseif0x/rustycore/tree/3.4.3/docs/wiki/:path',
       text: 'Edit this page on GitHub'
     },
   }

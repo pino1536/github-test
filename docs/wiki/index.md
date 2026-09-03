@@ -5,7 +5,7 @@ hero:
   name: "RustyCore"
   text: "WoW WotLK Classic server emulator written in Rust."
   image:
-    src: assets/logo.svg
+    src: /logo.svg
   actions:
     - theme: brand
       text: "Client"
